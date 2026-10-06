@@ -24,7 +24,7 @@ if (isset($_GET['model'])) {
         }
         echo "</table>";
     } else {
-        echo "🚫 No matching cars found.";
+        echo "No matching cars found.";
     }
 } else {
     echo "Please enter a model to search.";
