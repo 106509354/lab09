@@ -1,5 +1,13 @@
-<?php
-require_once("settings.php");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <?php
+    require_once("settings.php");
 
 if (isset($_GET['model'])) {
     $model = mysqli_real_escape_string($conn, $_GET['model']);
@@ -32,3 +40,6 @@ if (isset($_GET['model'])) {
 
 mysqli_close($conn);
 ?>
+
+</html>
+
